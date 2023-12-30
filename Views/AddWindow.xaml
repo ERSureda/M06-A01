@@ -1,0 +1,57 @@
+﻿<Window x:Class="M06_A01.Views.AddWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:M06_A01.Views"
+        mc:Ignorable="d"
+        Title="AddWindow" Height="500" Width="300">
+    <StackPanel>
+        <TextBlock
+            Text="Id:"/>
+        <TextBox
+            Name="txt_Id"/>
+
+        <TextBlock
+            Text="Name:"/>
+        <TextBox
+            Name="txt_Name"/>
+
+        <TextBlock
+            Text="BirthDate:"/>
+        <Calendar
+            Name="txt_Date"
+            DisplayDate="01.01.2014"/>
+
+        <TextBlock
+            Text="Email:"/>
+        <TextBox
+            Name="txt_Email"/>
+
+        <TextBlock
+            Text="Hobbie:"/>
+        <TextBox
+            Name="txt_Hobbie"/>
+
+        <TextBlock
+            Text="Score:"/>
+        <TextBox
+            Name="txt_Score"/>
+
+        <TextBlock
+            Text="Dual:"/>
+        <RadioButton GroupName="option_Dual" Name="dual_si">Si</RadioButton>
+        <RadioButton GroupName="option_Dual" Name="dual_no">No</RadioButton>
+
+        <TextBlock
+            Text="Cicle:"/>
+        <TextBox
+            Name="txt_Cicle"/>
+
+        <Separator/>
+
+        <Button
+            Content="Add Student"
+            Click="Button_Click"/>
+    </StackPanel>
+</Window>
